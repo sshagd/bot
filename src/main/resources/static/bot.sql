@@ -1,0 +1,10 @@
+create database bot;
+use bot;
+create table directory(CITY varchar(30) not null, DESCRIPTION varchar(200) not null);
+insert into directory (CITY, DESCRIPTION) values ('Москва', 'Не забудьте посетить Красную Площадь. Ну а в ЦУМ можно и не заходить)))');
+select * from directory;
+insert into directory (CITY, DESCRIPTION) values ('Минск', 'Главная достопримечательность - Национальная библиотека (ст.м.Восток). Рядом с ней продают вкусные пончики.');
+SET GLOBAL time_zone = '+3:00';
+drop table directory;
+show tables;
+delete from directory where description='Новое описание';
